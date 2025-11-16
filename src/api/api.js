@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || '/api' });
+const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'https://bitsa-backend-zv10.onrender.com/api' });
 
 
 export const register = (data) => API.post('/auth/register', data);
